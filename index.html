@@ -1,11 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Doe - Web Developer</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+  </head>
+  <body>
+    <div>
+      <ul class="navbar">
+        <li><img src="assets/favicon.png" alt="logo" /></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#abt">About</a></li>
+        <li><a href="#gal">Gallery</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#con">Contact</a></li>
+      </ul>
+    </div>
+    <div class="home" id="home">
+      <h3>Welcome to John Doe’s Portfolio</h3>
+      <p>
+        "Hello! I'm John Doe, a passionate web developer with a knack for
+        creating interactive, user-friendly websites. Explore my portfolio to
+        learn more about my work, skills, and how you can reach me."
+      </p>
+    </div>
+    <div class="about" id="abt">
+      <h3>About Me</h3>
+      <p>
+        "I am a self-taught web developer based in [Your Location]. Over the
+        past few years, I have honed my skills in HTML, CSS, JavaScript, and
+        front-end development frameworks. My passion lies in building visually
+        appealing and responsive websites that provide an excellent user
+        experience. In addition to coding, I enjoy exploring new technologies
+        and finding ways to optimize my projects."
+      </p>
+    </div>
+    <br /><br />
+    <div class="gallery" id="gal">
+      <h3>Gallery</h3>
+      <p>
+        This section will showcase a grid of 4 images of your recent projects or
+        any design work. Each image should have a brief caption describing the
+        project.
+      </p>
+      <div class="img-con">
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+        <div class="img">
+          <img src="assets/img.png" alt="website" class="img" />
+        </div>
+      </div>
+    </div>
+    <div class="faq" id="faq">
+      <br />
+      <h3>Frequently Asked Questions</h3>
+      <h6>Q1: What services do you offer?</h6>
+      <p class="ans">
+        "I offer front-end web development services, including custom website
+        designs, responsive layouts, and web optimization."
+      </p>
+      <br />
+      <h6>Q2: What technologies do you use?</h6>
+      <p class="ans">
+        "I primarily work with HTML, CSS, JavaScript, React, and Bootstrap. I
+        also have experience with backend tools like Node.js."
+      </p>
+      <br />
+      <h6>Q3: How can I contact you for a project?</h6>
+      <p class="ans">
+        "You can reach me through the contact form below or by sending an email
+        to <a href="mailto:johndoe@example.com">johndoe@example.com</a>."
+      </p>
+    </div>
+    <br /><br />
+    <div class="con" id="con">
+      <h3>Get In Touch</h3>
+      <p>
+        "Interested in working together or have a project in mind? Feel free to
+        get in touch using the form below. I’ll get back to you as soon as
+        possible."
+      </p>
+      <form action="">
+        <fieldset>
+          <legend>Name</legend>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="inp"
+            placeholder="Enter your name here"
+          />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Email</legend>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="inp"
+            placeholder="Enter your email here"
+          />
+        </fieldset>
+        <br />
+        <label for="msg"
+          >Message <br />
+          <textarea name="msg" id="msg">Any queries or messages?</textarea>
+        </label>
+        <br />
+        <button type="submit" class="myButton">Send Message!</button>
+      </form>
+    </div>
+  </body>
 </html>
